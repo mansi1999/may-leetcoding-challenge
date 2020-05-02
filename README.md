@@ -1,2 +1,2 @@
-# may-leetcoding-challenge
-Its a repository of te 30-day long May Challenge on Leetcode
+### may-leetcoding-challenge
+Its a repository of my solutions in the 30-day long May Challenge on Leetcode
