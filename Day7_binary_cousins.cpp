@@ -8,8 +8,6 @@ We are given the root of a binary tree with unique values, and the values x and 
 
 Return true if and only if the nodes corresponding to the values x and y are cousins.
 
- 
-
 Example 1:
 
 Input: root = [1,2,3,4], x = 4, y = 3
@@ -25,8 +23,6 @@ Example 3:
 Input: root = [1,2,3,null,4], x = 2, y = 3
 Output: false
 
- 
-
 Note:
 
     The number of nodes in the tree will be between 2 and 100.
@@ -35,14 +31,13 @@ Note:
  
 #include<stdio.h>
 #include<stdlib.h>
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
+//Definition for a binary tree node.
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+ 
 
 int getdepth(struct TreeNode *node, int data, int depth) 
 { 
@@ -106,7 +101,7 @@ bool isCousins(struct TreeNode* root, int x, int y){
         return false;
     }
 }
-int main()
-{
-	return(0);
-}
+
+/* If question says non unique values in binary tree then change the data type of p1 and p2 to struct TreeNode* and also 
+change the return type of getParent() function.
+Although parent values will be same pointers will be different */
