@@ -1,4 +1,4 @@
-/*Number Complement
+"""Number Complement
 
 Given a positive integer num, output its complement number. The complement strategy is to flip the bits of its binary representation.
 
@@ -17,7 +17,7 @@ Constraints:
     num >= 1
     You could assume no leading zero bit in the integer’s binary representation.
     This question is the same as 1009: https://leetcode.com/problems/complement-of-base-10-integer/
-*/
+"""
 
 class Solution:
     def findComplement(self, num: int) -> int:
